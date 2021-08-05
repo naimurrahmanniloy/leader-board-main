@@ -107,3 +107,44 @@ hr{
 .fa-star.empty{
     color: #AEAEAE;
 }
+
+/* media queries  */
+@media only screen and (max-width: 668px) {
+    .container{
+        width: 100%;
+    }
+    .players , .blogs , .courses{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .player{
+        flex-direction: column;
+    }
+    
+    .blog, .course{
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+        ;
+    }
+    .course{
+        margin-bottom: 30px;
+    }
+
+  
+}
+
+/* tablet devices  */
+@media only screen and (min-width:688px)and (max-width:992px) {
+    .container{
+        width: 100%;
+        
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .player{
+        justify-content: center;
+    }
+}
